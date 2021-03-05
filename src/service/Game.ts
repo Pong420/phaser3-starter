@@ -23,13 +23,18 @@ export class Game extends Phaser.Game {
     super({
       type: Phaser.AUTO,
       parent: 'game',
+      backgroundColor: '#ffffff',
       width,
       height,
-      dom: {
-        createContainer: true
-      },
       scale: {
         mode: Phaser.Scale.ScaleModes.FIT
+      },
+      physics: {
+        default: 'arcade',
+        arcade: {
+          debug: false,
+          gravity: { y: 400 }
+        }
       },
       // plugins: {
       //   scene: [
