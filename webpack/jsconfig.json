@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "strict": true,
+    "checkJs": true,
+    "resolveJsonModule": true,
+    "lib": ["esnext"]
+  },
+  "include": ["**/*"]
+}

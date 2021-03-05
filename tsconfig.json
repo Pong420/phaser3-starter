@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "allowUnreachableCode": false,
+    "sourceMap": true,
+    "strictPropertyInitialization": false,
+    "allowJs": false,
+    "lib": ["dom", "es5", "esnext"],
+    "jsx": "react",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/games/*": ["./games/*"]
+    }
+  },
+  "exclude": ["node_modules", "public/lib/*.js", "dist", "webpack"]
+}
