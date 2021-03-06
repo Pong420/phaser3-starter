@@ -40,7 +40,7 @@ const presets = {
   dev
 };
 
-let [presetKey, gameIds] = process.argv.slice(2);
+let [presetKey] = process.argv.slice(2);
 
 async function getConfigs() {
   const custom = `custom`;
@@ -82,11 +82,6 @@ async function getConfigs() {
         choices: env
       },
       {
-        type: 'input',
-        name: 'gameIds',
-        message: 'Input the game id(s) e.g. sb01,sb02:'
-      },
-      {
         type: 'checkbox',
         name: 'flags',
         message: 'Select other option',
@@ -101,7 +96,7 @@ async function getConfigs() {
     };
   }
 
-  return { ...presets[presetKey], gameIds };
+  return { ...presets[presetKey] };
 }
 
 async function run() {

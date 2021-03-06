@@ -1,7 +1,6 @@
 interface CustomWebpackOption {
   env: 'development' | 'production' | 'debug';
   mode: 'development' | 'production' | 'none';
-  gameIds?: string;
   serve?: boolean;
   sourceMap?: boolean;
   minify?: boolean;

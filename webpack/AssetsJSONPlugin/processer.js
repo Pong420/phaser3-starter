@@ -88,7 +88,6 @@ module.exports = { processer };
 // handler({
 //   from: [
 //     { input: 'src/assets', path: `../assets` },
-//     { input: `games/SB73/assets`, path: `assets` }
 //   ],
 //   to: 'assets/assets.json',
 //   include: ['**/*'],
